@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+  
+        
+        <div class="container weather-search-ct">
+            <div class="row">
+                <h3>Search for a city:</h3>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-2">
+                <div class="input-group mb-3">
+                <input id="city" type="text" class="form-control weather-box-search" aria-label="search-box">
+                <div class="input-group-append">
+                <button id="searchBtn" class="btn searchBtn btn-primary">
+                <i class="fa fa-search"></i>
+                 </button>
+                </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div> 
+</div>
+<div class="container list-items">
+                 <ul class="list-group">
+                        <li class="list-group-item col-md-2">London</li>
+                        <li class="list-group-item col-md-2">Paris</li>
+                        <li class="list-group-item col-md-2">Tokyo</li>
+                        <li class="list-group-item col-md-2">Barcelona</li>
+                        <li class="list-group-item col-md-2">Nome</li>
+                      </ul>       
+    </div>
+
+
+<div class="wrapper">
+<div id="currentWeather" class="container weather-stats">
+    <div class="row">
+        <div class="city-name col-md-10">
+            <h2 id="cityName">London (1/2/2020)</h2>
+        </div>
+        <br></br>
+        <div id="temp" class="city-temp col-md-7">
+            Temperature:
+        </div>
+        <br></br>
+        <div id="humidity" class="city-humid col-md-7">
+            Humidity:
+        </div>
+        <br></br>
+        <div id="wS" class="city-wind col-md-7">
+            Wind Speed:
+        </div>
+        <br></br>
+        <div id="UV" class="city-uv col-md-7">
+            UV Index:
+        </div>
+    </div>
+</div>
+
+    <div class="container forecast5">
+    <h3>5 Day Forecast:</h3>
+    <div class="row">
+    <div class="col-md-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div id="date1" class="card-body">
+                      <h5 class="card-title">Date</h5>
+                      <p  class="card-text">Temp</p>
+                      <p class="card-text">Humidity</p>
+                    </div>
+                  </div>
+
+
+
+    </div>
+    <div class="col-md-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div id="date2" class="card-body">
+                      <h5 class="card-title">Date</h5>
+                      <p  class="card-text">Temp</p>
+                      <p class="card-text">Humidity</p>
+                    </div>
+                  </div>
+
+
+
+    </div>
+    <div class="col-md-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div id="date3" class="card-body">
+                      <h5 class="card-title">Date</h5>
+                      <p  class="card-text">Temp</p>
+                      <p class="card-text">Humidity</p>
+                    </div>
+                  </div>
+
+
+
+    </div>
+    <div class="col-md-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div id="date4" class="card-body">
+                      <h5 class="card-title">Date</h5>
+                      <p class="card-text">Temp</p>
+                      <p class="card-text">Humidity</p>
+                    </div>
+                  </div>
+
+
+
+    </div>
+    <div class="col-md-2">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div id="date5" class="card-body">
+                      <h5 class="card-title">Date</h5>
+                      <p class="card-text">Temp</p>
+                      <p class="card-text">Humidity</p>
+                    </div>
+                  </div>
+
+
+
+    </div>
+  
+</div> 
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="weather.js"></script>              
+</body>
+</html>
