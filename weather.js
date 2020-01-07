@@ -1,5 +1,5 @@
 
-var city = $("#city").val().trim();
+var city = '';
 var units = "&units=imperial";
 var apiKey = "&APPID=b4c0df4313eab8d2235e613c40604980";
 var currentURL = "weather?q=";
@@ -25,8 +25,6 @@ $(document).ready(function () {
             .then(function (response) {
                 // $(".list-group").prepend("<li class= list-group-item>" + city + "</li>"); //
 
-                localStorage.setItem("city name", city);
-
 
                 ////////////
 
@@ -49,8 +47,17 @@ $(document).ready(function () {
 
             });
 
+            localStorage.setItem("city name", city);
+
             var cityStorage = localStorage.getItem("city name");
-            $(".list-group").prepend("<li class='list-group-item col-md-4'>" + cityStorage + "</li>")
+            var listItem = $("<li>").addClass("list-group-item col-md-4");
+
+
+           var getItems = listItem.text(cityStorage);
+
+         $(".list-group").prepend(getItems);
+
+       //  ("<li class='list-group-item col-md-4'>" + getItems + "</li>");//
 
     });
 
